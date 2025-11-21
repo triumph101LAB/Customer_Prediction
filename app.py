@@ -25,7 +25,7 @@ def main():
     
     # Load raw data for display (optional, just for visuals)
     try:
-        raw_df = pd.read_csv('C:\\Users\\DELL\\Downloads\\shopping_behavior_updated.csv')
+        raw_df = pd.read_csv('shopping_behavior_updated.csv')
     except:
         st.error("CSV file not found.")
         return
@@ -97,4 +97,5 @@ def main():
             st.warning("## ❌ Prediction: Customer will likely NOT SUBSCRIBE")
 
 if __name__ == "__main__":
+
     main()
