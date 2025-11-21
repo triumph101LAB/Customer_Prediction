@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 def train_model():
     # 1. Load Data
     try:
-        df = pd.read_csv('C:\\Users\\DELL\\Downloads\\shopping_behavior_updated.csv')
+        df = pd.read_csv('shopping_behavior_updated.csv')
     except FileNotFoundError:
         print("Error: 'shopping_behavior_updated.csv' not found.")
         return
@@ -44,4 +44,5 @@ def train_model():
     print("Success! 'model.pkl' and 'encoders.pkl' have been saved.")
 
 if __name__ == "__main__":
+
     train_model()
